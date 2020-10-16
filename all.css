@@ -1,0 +1,55 @@
+.space{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(192, 190, 190);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.bg{
+    height: auto;
+    width: 50vw;
+    position: absolute;
+    top: 18vh;
+    right: 25vw;
+}
+.inputarea{
+    height: auto;
+    width: 50vw;
+    top: 18vh;
+    right: 25vw;
+    z-index: 1;
+}
+label{
+    font-size: 12vh;
+    color: red;
+}
+input{
+    width: 30vw;
+    height: 15vh;
+    font-size: 12vh;
+}
+
+.blur{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: blur(50px);
+    transition: all 2s;
+}
+.blur.aa{
+    filter: blur(1px);
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    font-size: 30px;
+}

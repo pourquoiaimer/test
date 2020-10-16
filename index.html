@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>給香香的測試網頁</title>
+</head>
+
+<body>
+
+
+    <div class="space" id="app">
+        
+        <div class="blur" :class="{ 'aa' : check == 'ok'}">
+        </div>
+        <div class="inputarea" v-if="check =='no'">
+            <label class="" for="pw">請輸入密碼</label>
+            <br>
+            <input class="" type="text" id='pw' v-model="inputpassword">
+            <br>
+            <button class="btn" type="button" @click='check = checkpw()'>輸入</button>
+        </div>
+        <!-- <img class="bg" src="images/bg.jpg" alt="" v-if="password == '1020'"> -->
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                password: "1020",
+                inputpassword:"",
+                check:"no",
+            },
+            methods: {
+                checkpw: function () {
+                    let value = this.inputpassword.trim();
+                    if (value == "1020") {
+                        console.log("12w3");
+                        return "ok"                         
+                    }else{
+                        console.log("123");
+                        this.inputpassword='';
+                        return "no";
+                    }
+                },
+            },
+        })
+    </script>
+</body>
+
+</html>
