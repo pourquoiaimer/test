@@ -18,14 +18,14 @@
         <div class="blur" :class="{ 'aa' : check == 'ok'}">
         </div>
         <div class="inputarea" v-if="check =='no'">
-            <label class="" for="pw">請輸入密碼</label>
+            <label class="" for="pw">請輸入密碼</label> 
             <br>
             <input class="" type="text" id='pw' v-model="inputpassword" @keyup.enter="check = checkpw()">
             <br>
             <button class="btn" type="button" @click='check = checkpw()'>輸入</button>
         </div>
         <div class="back" v-if="inputpassword =='720716'">
-            <a href="index.html">test1</a>
+            <a href="index.html">test1</a> 
             <a href="#">還沒</a>
         </div>
         <!-- <img class="bg" src="images/bg.jpg" alt="" v-if="password == '1020'"> -->
@@ -41,7 +41,7 @@
             methods: {
                 checkpw: function () {
                     let value = this.inputpassword.trim();
-                    if (value == "2015") {  //輸入密碼欄位
+                    if (value == "2015") {  //輸入密碼欄位 香香的出生年
                         console.log("12w3");
                         return "ok"                         
                     }else{
