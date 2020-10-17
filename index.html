@@ -20,6 +20,7 @@
         <div class="blur" :class="{ 'aa' : check == 'ok'}">
         </div>
         <div class="inputarea" v-if="check =='no'">
+            <h1>test1 - 香香出生月日</h1>
             <label class="" for="pw">請輸入密碼</label>
             <br>
             <input class="" type="text" id='pw' v-model="inputpassword" @keyup.enter="check = checkpw()">
@@ -30,8 +31,12 @@
                 <a href="#">還沒</a>
             </div>
         </div>
+        <img class="balloon img1" :class="{ 'fly' : check == 'ok'}" src="images/cele.png" alt="">
+        <img class="balloon img2" :class="{ 'fly' : check == 'ok'}" src="images/cele.png" alt="">
+        <img class="balloon img3" :class="{ 'fly' : check == 'ok'}" src="images/cele.png" alt="">
+        <img class="balloon img4" :class="{ 'fly' : check == 'ok'}" src="images/cele.png" alt="">
+        <img class="balloon img5" :class="{ 'fly' : check == 'ok'}" src="images/cele.png" alt="">
 
-        <!-- <img class="bg" src="images/bg.jpg" alt="" v-if="password == '1020'"> -->
     </div>
 
     <script>

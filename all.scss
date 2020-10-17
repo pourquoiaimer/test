@@ -15,6 +15,29 @@
         background-color: rgb(61, 61, 82);
     }
 }
+.inputarea {
+    height: auto;
+    top: 18vh;
+    right: 25vw;
+    z-index: 1;
+}
+label {
+    font-size: 10vh;
+    color: red;
+}
+input {
+    width: 70%;
+    height: 20vh;
+    font-size: 10vh;
+    text-align: center;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    font-size: 30px;
+}
 
 .space {
     height: 100vh;
@@ -24,34 +47,6 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
-    .bg {
-        height: auto;
-        width: 50vw;
-        position: absolute;
-        top: 18vh;
-        right: 25vw;
-    }
-
-    .inputarea {
-        height: auto;
-        width: 50vw;
-        top: 18vh;
-        right: 25vw;
-        z-index: 1;
-    }
-
-    label {
-        font-size: 12vh;
-        color: red;
-    }
-
-    input {
-        width: 30vw;
-        height: 15vh;
-        font-size: 12vh;
-    }
-
     .blur {
         height: 100vh;
         width: 100vw;
@@ -62,17 +57,8 @@
         filter: blur(50px);
         transition: all 2s;
     }
-
     .blur.aa {
         filter: blur(1px);
-    }
-
-    .btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background: red;
-        color: white;
-        font-size: 30px;
     }
 }
 
@@ -84,34 +70,6 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
-    .bg {
-        height: auto;
-        width: 50vw;
-        position: absolute;
-        top: 18vh;
-        right: 25vw;
-    }
-
-    .inputarea {
-        height: auto;
-        width: 50vw;
-        top: 18vh;
-        right: 25vw;
-        z-index: 1;
-    }
-
-    label {
-        font-size: 12vh;
-        color: red;
-    }
-
-    input {
-        width: 30vw;
-        height: 15vh;
-        font-size: 12vh;
-    }
-
     .blur {
         height: 100vh;
         width: 100vw;
@@ -127,12 +85,54 @@
     .blur.aa {
         filter: blur(1px);
     }
+}
 
-    .btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background: red;
-        color: white;
-        font-size: 30px;
+.balloon{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    transition: all 5s;
+    &.img1{
+        bottom: 50px;
+        right: 5vw;
+        &.fly{
+            width: 800px;
+            bottom: 1500px;
+        }
     }
+    &.img2{
+        bottom: 50px;
+        right: 20vw;
+        &.fly{
+            width: 1200px;
+            bottom: 1500px;
+        }
+    }
+    &.img3{
+        bottom: 50px;
+        right: 70vw;
+        &.fly{
+            width: 1800px;
+            bottom: 1500px;
+            right: 10vw;
+        }
+    }
+    &.img4{
+        bottom: 50px;
+        right: 85vw;
+        &.fly{
+            width: 1500px;
+            bottom: 1500px;
+        }
+    }
+    &.img5{
+        position: fixed;
+        width: 300px;
+        &.fly{
+            width: 30000px;
+            opacity:0;
+            transition: all 4s;
+        }
+    }
+    
 }

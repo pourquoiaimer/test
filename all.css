@@ -21,6 +21,33 @@
   background-color: #3d3d52;
 }
 
+.inputarea {
+  height: auto;
+  top: 18vh;
+  right: 25vw;
+  z-index: 1;
+}
+
+label {
+  font-size: 10vh;
+  color: red;
+}
+
+input {
+  width: 70%;
+  height: 20vh;
+  font-size: 10vh;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  font-size: 30px;
+}
+
 .space {
   height: 100vh;
   width: 100vw;
@@ -35,33 +62,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.space .bg {
-  height: auto;
-  width: 50vw;
-  position: absolute;
-  top: 18vh;
-  right: 25vw;
-}
-
-.space .inputarea {
-  height: auto;
-  width: 50vw;
-  top: 18vh;
-  right: 25vw;
-  z-index: 1;
-}
-
-.space label {
-  font-size: 12vh;
-  color: red;
-}
-
-.space input {
-  width: 30vw;
-  height: 15vh;
-  font-size: 12vh;
 }
 
 .space .blur {
@@ -82,14 +82,6 @@
           filter: blur(1px);
 }
 
-.space .btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: red;
-  color: white;
-  font-size: 30px;
-}
-
 .space2 {
   height: 100vh;
   width: 100vw;
@@ -104,33 +96,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.space2 .bg {
-  height: auto;
-  width: 50vw;
-  position: absolute;
-  top: 18vh;
-  right: 25vw;
-}
-
-.space2 .inputarea {
-  height: auto;
-  width: 50vw;
-  top: 18vh;
-  right: 25vw;
-  z-index: 1;
-}
-
-.space2 label {
-  font-size: 12vh;
-  color: red;
-}
-
-.space2 input {
-  width: 30vw;
-  height: 15vh;
-  font-size: 12vh;
 }
 
 .space2 .blur {
@@ -152,10 +117,63 @@
           filter: blur(1px);
 }
 
-.space2 .btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: red;
-  color: white;
-  font-size: 30px;
+.balloon {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+.balloon.img1 {
+  bottom: 50px;
+  right: 5vw;
+}
+
+.balloon.img1.fly {
+  width: 800px;
+  bottom: 1500px;
+}
+
+.balloon.img2 {
+  bottom: 50px;
+  right: 20vw;
+}
+
+.balloon.img2.fly {
+  width: 1200px;
+  bottom: 1500px;
+}
+
+.balloon.img3 {
+  bottom: 50px;
+  right: 70vw;
+}
+
+.balloon.img3.fly {
+  width: 1800px;
+  bottom: 1500px;
+  right: 10vw;
+}
+
+.balloon.img4 {
+  bottom: 50px;
+  right: 85vw;
+}
+
+.balloon.img4.fly {
+  width: 1500px;
+  bottom: 1500px;
+}
+
+.balloon.img5 {
+  position: fixed;
+  width: 300px;
+}
+
+.balloon.img5.fly {
+  width: 30000px;
+  opacity: 0;
+  -webkit-transition: all 4s;
+  transition: all 4s;
 }
