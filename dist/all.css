@@ -5,15 +5,9 @@
   background-color: #dae455;
   color: white;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .back a {
   color: white;
   margin-top: 10px;
@@ -25,18 +19,11 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .space .bg {
   height: auto;
   width: 50vw;
@@ -44,7 +31,6 @@
   top: 18vh;
   right: 25vw;
 }
-
 .space .inputarea {
   height: auto;
   width: 50vw;
@@ -52,18 +38,15 @@
   right: 25vw;
   z-index: 1;
 }
-
 .space label {
   font-size: 12vh;
   color: red;
 }
-
 .space input {
   width: 30vw;
   height: 15vh;
   font-size: 12vh;
 }
-
 .space .blur {
   height: 100vh;
   width: 100vw;
@@ -71,17 +54,12 @@
   background-image: url(images/bg.jpg);
   background-size: cover;
   background-position: center center;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
-  -webkit-transition: all 2s;
+  filter: blur(50px);
   transition: all 2s;
 }
-
 .space .blur.aa {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  filter: blur(1px);
 }
-
 .space .btn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -94,18 +72,11 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .space2 .bg {
   height: auto;
   width: 50vw;
@@ -113,7 +84,6 @@
   top: 18vh;
   right: 25vw;
 }
-
 .space2 .inputarea {
   height: auto;
   width: 50vw;
@@ -121,18 +91,15 @@
   right: 25vw;
   z-index: 1;
 }
-
 .space2 label {
   font-size: 12vh;
   color: red;
 }
-
 .space2 input {
   width: 30vw;
   height: 15vh;
   font-size: 12vh;
 }
-
 .space2 .blur {
   height: 100vh;
   width: 100vw;
@@ -141,17 +108,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
-  -webkit-transition: all 2s;
+  filter: blur(50px);
   transition: all 2s;
 }
-
 .space2 .blur.aa {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  filter: blur(1px);
 }
-
 .space2 .btn {
   margin-top: 20px;
   padding: 10px 20px;

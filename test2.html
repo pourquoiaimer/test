@@ -7,16 +7,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="all.css">
+        <link rel="stylesheet" href="all.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>測試網頁一</title>
+    <title>測試網頁二</title>
 </head>
 
 <body>
 
-
-    <div class="space" id="app">
-        
+    <div class="space2" id="app">
         <div class="blur" :class="{ 'aa' : check == 'ok'}">
         </div>
         <div class="inputarea" v-if="check =='no'">
@@ -25,12 +23,11 @@
             <input class="" type="text" id='pw' v-model="inputpassword" @keyup.enter="check = checkpw()">
             <br>
             <button class="btn" type="button" @click='check = checkpw()'>輸入</button>
-            <div class="back" v-if="inputpassword =='720716'">
-                <a href="test2.html">test2</a>
-                <a href="#">還沒</a>
-            </div>
         </div>
-
+        <div class="back" v-if="inputpassword =='720716'">
+            <a href="index.html">test1</a>
+            <a href="#">還沒</a>
+        </div>
         <!-- <img class="bg" src="images/bg.jpg" alt="" v-if="password == '1020'"> -->
     </div>
 
@@ -38,14 +35,13 @@
         var app = new Vue({
             el: '#app',
             data: {
-                password: "1020",
                 inputpassword:"",
                 check:"no",
             },
             methods: {
                 checkpw: function () {
                     let value = this.inputpassword.trim();
-                    if (value == "1020") {
+                    if (value == "2015") {  //輸入密碼欄位
                         console.log("12w3");
                         return "ok"                         
                     }else{
