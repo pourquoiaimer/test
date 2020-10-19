@@ -1,3 +1,33 @@
+.index{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        margin-bottom: 100px;
+        font-size: 80px;
+        color: red;
+    }
+}
+.list {
+    background-color: blue;
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        background-color: grey;
+        border-radius: 50%;
+    }
+}
+
 .back {
     position: absolute;
     top: 50px;
@@ -15,22 +45,26 @@
         background-color: rgb(61, 61, 82);
     }
 }
+
 .inputarea {
     height: auto;
     top: 18vh;
     right: 25vw;
     z-index: 1;
 }
+
 label {
     font-size: 10vh;
     color: red;
 }
+
 input {
     width: 70%;
     height: 20vh;
     font-size: 10vh;
     text-align: center;
 }
+
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
@@ -47,6 +81,7 @@ input {
     align-items: center;
     text-align: center;
     justify-content: center;
+
     .blur {
         height: 100vh;
         width: 100vw;
@@ -57,6 +92,7 @@ input {
         filter: blur(50px);
         transition: all 2s;
     }
+
     .blur.aa {
         filter: blur(1px);
     }
@@ -70,6 +106,7 @@ input {
     align-items: center;
     text-align: center;
     justify-content: center;
+
     .blur {
         height: 100vh;
         width: 100vw;
@@ -87,52 +124,61 @@ input {
     }
 }
 
-.balloon{
+.balloon {
     position: absolute;
     width: 200px;
     height: auto;
     transition: all 5s;
-    &.img1{
+
+    &.img1 {
         bottom: 50px;
         right: 5vw;
-        &.fly{
+
+        &.fly {
             width: 800px;
             bottom: 1500px;
         }
     }
-    &.img2{
+
+    &.img2 {
         bottom: 50px;
         right: 20vw;
-        &.fly{
+
+        &.fly {
             width: 1200px;
             bottom: 1500px;
         }
     }
-    &.img3{
+
+    &.img3 {
         bottom: 50px;
         right: 70vw;
-        &.fly{
+
+        &.fly {
             width: 1800px;
             bottom: 1500px;
             right: 10vw;
         }
     }
-    &.img4{
+
+    &.img4 {
         bottom: 50px;
         right: 85vw;
-        &.fly{
+
+        &.fly {
             width: 1500px;
             bottom: 1500px;
         }
     }
-    &.img5{
+
+    &.img5 {
         position: fixed;
         width: 300px;
-        &.fly{
+
+        &.fly {
             width: 30000px;
-            opacity:0;
+            opacity: 0;
             transition: all 4s;
         }
     }
-    
 }
